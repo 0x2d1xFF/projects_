@@ -1,0 +1,144 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+nav {
+    display: flex;           
+    justify-content: flex-end;
+   
+}
+
+nav ul {
+    list-style-type: none;  
+    margin-right: 56px;             
+    padding: 40px;             
+    display: flex;          
+}
+
+nav ul li {
+    margin-right: 40px;    
+}
+
+nav ul li a {
+    text-decoration: none;   
+    font-size: 24px;
+    color: #000;           
+}
+
+#home {
+    display: grid;                         
+    grid-template-columns: 2fr 1fr;   
+}
+
+.hero-section {
+    margin: 200px;
+}
+
+
+h1 {
+    font-size: 48px;
+    color: rgb(144, 20, 182);
+}
+
+
+.hero-section span {
+    font-size: 32px;
+}
+
+.hero-section p {
+    margin-top: 8px;
+    margin-bottom: 80px;
+}
+
+img {
+    margin: 144px 0 0 0;
+}
+
+.hero-section a {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(144, 20, 182);
+}
+
+#about {
+    margin-top: 240px;
+    margin-left: 192px;
+}
+
+#about h1 {
+    font-size: 48px;
+    color: rgb(144, 20, 182);
+    padding-top: 8%;
+}
+
+
+.about-section {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+}
+
+.about-section-elements {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr; 
+    gap: 8px;
+}
+
+.about-section-elements a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cv {
+    font-size: 24px;
+    text-decoration: none;
+    color: rgb(144, 20, 182);
+}
+
+.cv-br {
+    margin-top: 160px;
+}
+
+#contacts {
+    margin-left: 192px;
+    margin-top: 320px;   
+}
+
+.data {
+    display: grid;
+    grid-template-columns: 2fr 1fr;  
+}
+
+.data-1 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+.email-input {
+    width: 200px;
+}
+.text-input {
+    height: 200px;
+    width: 304px;
+}
+
+#contacts img {
+    margin-right: 192px;
+}
+
+footer {
+    margin-top: 320px;
+    padding: 40px;
+    background-color: rgb(180, 179, 178);
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    align-content: center;
+    justify-content: center;
+}
