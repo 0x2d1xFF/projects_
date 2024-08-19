@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<main>
+  <body>
+    <div class = "head">
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for sharing us your interests! We will use this to improve our platform.</p>
+    </div>
+    <form id="survey-form">
+      <label id="name-label" for="name" > Enter your name:
+        <input id="name" type="text" required placeholder="Your name here">
+      </label>
+      <label id="email-label" for="email"> Enter your email:
+        <input id="email" type="email" required placeholder="Your email here">
+      </label>
+      <label id="number-label" for="number"> Enter your age:
+        <input id="number" type="number" min="18" max="40" required placeholder="Age">
+      </label>
+      <label for="dropdown"> Programming languages: 
+        <select id="dropdown"> 
+          <option>Python</option>
+          <option>Javascript</option>
+          <option>C</option>
+        </select>
+      <label>
+      <label class="hobbies" for="dropdown"> What are your hobbies?
+        <input name="choice" type="radio" value="0" /> Creating Websites
+        <input name="choice" type="radio" value="1"/> Cybersecurity
+        <input name="choice" type="radio" value="2"/> Playing
+      <label>
+      <label class="lang">Which language do you prefer?
+        <input type="checkbox" value="lang_1"> English
+        <input type="checkbox" value="lang_2"> Korean
+        <input type="checkbox" value="lang_3"> Japanese
+      </label>
+      <p>Comments / Suggestions:</p>
+      <label> 
+        <textarea></textarea>
+      </label>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</main>
+
+</html>
