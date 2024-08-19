@@ -1,36 +1,38 @@
 *{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
+    padding: 0;
 }
 nav {
-    display: flex;           
-    justify-content: flex-end;
-   
+    width: 100%;
+    background-color: rgb(148, 70, 172);
 }
 
 nav ul {
+    display: flex;
+    justify-content: flex-end;
     list-style-type: none;  
-    margin-right: 56px;             
-    padding: 40px;             
-    display: flex;          
+    margin-right: 0;             
+    padding: 24px 56px;         
 }
 
 nav ul li {
-    margin-right: 40px;    
+    margin-left: 40px;    
 }
 
 nav ul li a {
     text-decoration: none;   
     font-size: 24px;
-    color: #000;           
+    color: #fff;           
 }
 
 #home {
     display: grid;                         
-    grid-template-columns: 2fr 1fr;   
+    grid-template-columns: 2fr 1fr;  
+    margin-top: 120px; 
 }
 
-.hero-section {
+#welcome-section {
     margin: 200px;
 }
 
@@ -41,11 +43,11 @@ h1 {
 }
 
 
-.hero-section span {
+#welcome-section  span {
     font-size: 32px;
 }
 
-.hero-section p {
+#welcome-section  p {
     margin-top: 8px;
     margin-bottom: 80px;
 }
@@ -54,7 +56,7 @@ img {
     margin: 144px 0 0 0;
 }
 
-.hero-section a {
+#welcome-section  a {
     font-size: 24px;
     text-decoration: none;
     color: rgb(144, 20, 182);
@@ -82,7 +84,7 @@ img {
     margin-top: 8px;
     display: grid;
     grid-template-columns: 1fr 2fr 3fr; 
-    gap: 8px;
+    gap: 8px 0;
 }
 
 .about-section-elements a{
@@ -103,6 +105,8 @@ img {
 #contacts {
     margin-left: 192px;
     margin-top: 320px;   
+    border: 1px solid rgb(144, 20, 182);
+    padding: 24px;
 }
 
 .data {
@@ -133,7 +137,8 @@ img {
 footer {
     margin-top: 320px;
     padding: 40px;
-    background-color: rgb(180, 179, 178);
+    background-color: rgb(148, 70, 172);
+    color: #fff;
     display: flex;
     justify-content: center;
 }
@@ -141,4 +146,94 @@ footer {
 footer p {
     align-content: center;
     justify-content: center;
+}
+
+#projects{
+    display: flex;
+    justify-content: center;
+    margin-top: 320px;
+    color: rgb(148, 70, 172);
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+}
+
+@media (max-width: 2040px) {
+    #welcome-section {
+        margin: 200px 80px 0;
+    }
+
+    #about {
+        margin: 200px 80px;
+    }
+    #contacts {
+        margin: 200px 80px;
+    }
+
+}
+
+
+
+@media (max-width: 800px) {
+    nav ul {
+        justify-content: center;
+    }
+    #home {
+        display: grid;                         
+        grid-template-columns: 1fr;   
+        justify-items: center;
+        margin-top: 16px;
+    }
+    img {
+        margin-top: -144px;
+    }
+    .about-section-elements{
+        gap: 16px;
+    }
+    #about h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    #contacts h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .about-section h2 {
+        font-size: 24px;
+    }
+    .about-section-elements {
+        gap: 2px;
+    }
+    .data {
+        display: grid;
+        grid-template-columns: 1fr;  
+        margin-left: 80px;
+    }
+    .data img{
+        margin-top: 40px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .data img {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 1080px) {
+    img {
+        height: 320px;
+        width: 360px;
+        padding-top: 48px;
+        
+    }
+    #welcome-section {
+        margin: 120px 80px;
+    }
 }
